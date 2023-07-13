@@ -22,6 +22,6 @@ export class AuthService {
   }
 
   logout() {
-    return this.http.post(`${environment.api}/logout/}`, {});
+    return this.http.post(`${environment.api}/logout/`, {});
   }
 }
