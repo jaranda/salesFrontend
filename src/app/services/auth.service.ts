@@ -18,10 +18,10 @@ export class AuthService {
   }
 
   user() {
-    return this.http.get(`${environment.api}/user`, {withCredentials: true});
+    return this.http.get(`${environment.api}/user`);
   }
 
   logout() {
-    return this.http.post(`${environment.api}/logout/}`, {}, {withCredentials: true})
+    return this.http.post(`${environment.api}/logout/}`, {});
   }
 }
