@@ -18,7 +18,8 @@ export class RegisterComponent {
       last_name: '',
       email: '',
       password: '',
-      password_confirm: ''
+      password_confirm: '',
+      role: '1'
     });
   }
 
