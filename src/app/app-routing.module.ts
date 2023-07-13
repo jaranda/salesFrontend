@@ -9,8 +9,10 @@ import { UsersComponent } from './secure/users/users.component';
 
 const routes: Routes = [
   {
-    path: '', component: SecureComponent,
+    path: '',
+    component: SecureComponent,
     children: [
+      {path: '', redirectTo: '/dashboard', pathMatch: 'full'},
       {path: 'dashboard', component: DashboardComponent},
       {path: 'users', component: UsersComponent}
     ]
