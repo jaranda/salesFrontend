@@ -1,25 +1,25 @@
 <main class="form-signin w-100 m-auto">
-<form>
+<form [formGroup]="form" (submit)="submit()">
   <h1 class="h3 mb-3 fw-normal">Registration</h1>
 
   <div class="form-floating">
-    <input type="first-name" class="form-control" id="firstName" placeholder="First Name">
+    <input type="first-name" formControlName="first_name" class="form-control" id="firstName" placeholder="First Name">
     <label for="firstName">First Name</label>
   </div>
   <div class="form-floating">
-    <input type="last-name" class="form-control" id="lastName" placeholder="Last Name">
+    <input type="last-name" formControlName="last_name" class="form-control" id="lastName" placeholder="Last Name">
     <label for="lastName">Last Name</label>
   </div>
   <div class="form-floating">
-    <input type="email" class="form-control" id="inputEmail" placeholder="name@example.com">
+    <input type="email" formControlName="email" class="form-control" id="inputEmail" placeholder="name@example.com">
     <label for="inputEmail">Email Address</label>
   </div>
   <div class="form-floating">
-    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+    <input type="password" formControlName="password" class="form-control" id="inputPassword" placeholder="Password">
     <label for="inputPassword">Password</label>
   </div>
   <div class="form-floating">
-    <input type="password-confirm" class="form-control" id="inputPasswordConfirm" placeholder="Password">
+    <input type="password" formControlName="password_confirm" class="form-control" id="inputPasswordConfirm" placeholder="Password">
     <label for="inputPasswordConfirm">Confirm Password</label>
   </div>
   <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
