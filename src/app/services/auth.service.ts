@@ -7,7 +7,7 @@ import { environment } from 'src/environments/environment.development';
 })
 export class AuthService {
 
-  constructor(private http: HttpClient) { }
+  constructor(protected http: HttpClient) { }
 
   login(data: any) {
     return this.http.post(`${environment.api}/login/`, data);
@@ -15,5 +15,9 @@ export class AuthService {
 
   register(data: any) {
     return this.http.post(`${environment.api}/register/`, data);
+  }
+
+  user() {
+    return this.http.get(`${environment.api}/user`, {withCredentials: true});
   }
 }

@@ -5,7 +5,6 @@ import { RegisterComponent } from './register/register.component';
 import { PublicComponent } from './public.component';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -20,7 +19,6 @@ import { HttpClientModule } from '@angular/common/http';
     RouterModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
   ]
 })
 export class PublicModule { }
